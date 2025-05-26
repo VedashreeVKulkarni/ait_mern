@@ -1,0 +1,10 @@
+GIT COMMANDS:
+
+$ git status
+This is to know the status of my local repo w.r.t. to the remote repo
+
+$ git clone git_repo_url
+$ git clone https://github.com/neelmyna/ait_mern
+
+$ git pull origin main
+This command downloads the content of the remote repo that is not available in local repo (from the main branch only).
