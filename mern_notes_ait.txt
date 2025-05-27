@@ -83,6 +83,26 @@ This command downloads the content of the remote repo that is not available in l
 
 CLONE USING PAT:
 $ git clone https://PAT@git_URL
+-------------------------------
+DAY2 27-05-2025 Tuesday
 
+Java	MySQL
+byte	tinyint
+short	smallint
+int		int
+long	bigint
+----------------------------
+map, filter, reduce
+
+The map method is used to access all elements of a list/array and do something with it.
+For example, I want to add bonus of Rs.1000/- to salary of every employee whose details are available in the list.
+
+The filter method is used to get the filtered objects from the list on some filtering cretiria.
+For example, I want the list of employees who are not from Bengaluru.
+OR, I want the list of employees who are working as developers.
+
+The reduce method is used to deduce/calculate some value using the elements/objects of the list.
+For example, to calsulate the sum of all salaries of the employees.
+Or to find the employee with highest salary.
 
 
