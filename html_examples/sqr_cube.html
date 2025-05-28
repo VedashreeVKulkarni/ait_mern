@@ -4,6 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Square Cube</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        input, button {
+            padding: 8px;
+            margin: 10px;
+            font-size: 16px;
+        }
+
+        button {
+            background-color: orange;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        #result {
+            margin-top: 20px;
+            font-weight: bold;
+        }
+    </style>
 </head>
 <body>
     <h1>Square and Cube Calculator</h1>
@@ -12,17 +37,23 @@
         <input type="number" id="numberInput">
     </div>
     <div>
-        <button onclick="calculate()">Calculate</button>
+        <button onclick="calculateSquare()">Square</button>
+        <button onclick="calculateCube()">Cube</button>
     </div>
     <div>
         <p id="result"></p>
     </div>
     <script>
-        function calculate() {
+        function calculateSquare() {
             const number = document.getElementById("numberInput").value;
             const square = number * number;
+            document.getElementById("result").innerText = `Square: ${square}`;
+        }
+
+        function calculateCube() {
+            const number = document.getElementById("numberInput").value;
             const cube = number * number * number;
-            document.getElementById("result").innerText = `Square: ${square}, Cube: ${cube}`;
+            document.getElementById("result").innerText = `Cube: ${cube}`;
         }
     </script>
 </body>
