@@ -1,0 +1,49 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Big Of 2 Numbers</title>
+   
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-900 text-aquamarine font-bold p-8 min-h-screen flex flex-col items-center justify-center">
+    <div id="data" class="bg-purple-400 p-6 rounded-lg shadow-md">
+        <label for="firstNum" class="block mb-2">First Number:</label> 
+        <input type="text" id="firstNum" class="w-full p-2 rounded text-black mb-4" />
+        
+        <label for="secondNum" class="block mb-2">Second Number:</label> 
+        <input type="text" id="secondNum" class="w-full p-2 rounded text-black mb-4" />
+    </div>
+
+    <div class="mt-4">
+        <p id="outputPara"
+           onclick="findBigOf2()"
+           class="cursor-pointer bg-green-300 text-black px-4 py-2 rounded hover:bg-orange-300 transition">
+           Click Me to get the Answer
+        </p>
+    </div>
+
+    <script>
+        function findBigOf2() {
+            const num1 = parseInt(document.getElementById("firstNum").value);
+            const num2 = parseInt(document.getElementById("secondNum").value);
+            const output = document.getElementById("outputPara");
+
+            if (isNaN(num1) || isNaN(num2)) {
+                output.innerText = "Please enter valid numbers.";
+                return;
+            }
+
+            if (num1 > num2)
+                output.innerText = "Number1 = " + num1 + " is big";
+            else if (num2 > num1)
+                output.innerText = "Number2 = " + num2 + " is big";
+            else
+                output.innerText = "Both numbers are equal";
+        }
+    </script>
+</body>
+</html>
